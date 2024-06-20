@@ -26,6 +26,12 @@
 		79C673B72C207C35003838CD /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673B62C207C35003838CD /* SwipeActionButtonView.swift */; };
 		79C673B92C208192003838CD /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673B82C208192003838CD /* SwipeAction.swift */; };
 		79C673BB2C21AE48003838CD /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673BA2C21AE47003838CD /* UserProfileView.swift */; };
+		79C673BF2C21C934003838CD /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673BE2C21C934003838CD /* CurrentUserProfileView.swift */; };
+		79C673C12C21C977003838CD /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673C02C21C977003838CD /* CurrentUserProfileHeaderView.swift */; };
+		79C673C42C22F000003838CD /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673C32C22F000003838CD /* EditProfileView.swift */; };
+		79C673C62C22F461003838CD /* ProfileImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673C52C22F461003838CD /* ProfileImageGridView.swift */; };
+		79C673CA2C231A9A003838CD /* UserMatchViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673C92C231A9A003838CD /* UserMatchViewView.swift */; };
+		79C673CD2C2328B1003838CD /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C673CC2C2328B1003838CD /* MatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,12 @@
 		79C673B62C207C35003838CD /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
 		79C673B82C208192003838CD /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		79C673BA2C21AE47003838CD /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		79C673BE2C21C934003838CD /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		79C673C02C21C977003838CD /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
+		79C673C32C22F000003838CD /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		79C673C52C22F461003838CD /* ProfileImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageGridView.swift; sourceTree = "<group>"; };
+		79C673C92C231A9A003838CD /* UserMatchViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMatchViewView.swift; sourceTree = "<group>"; };
+		79C673CC2C2328B1003838CD /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,7 @@
 		79C6738A2C18A207003838CD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				79C673C72C231A53003838CD /* Matches */,
 				79C673922C18A2E5003838CD /* Messaging */,
 				79C673912C18A2CA003838CD /* Searching */,
 				79C673902C18A2B4003838CD /* Profile */,
@@ -158,7 +171,9 @@
 		79C673902C18A2B4003838CD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				79C673BA2C21AE47003838CD /* UserProfileView.swift */,
+				79C673C22C22EFEA003838CD /* EditProfile */,
+				79C673BD2C21C900003838CD /* CurrentUserProfile */,
+				79C673BC2C21C8E9003838CD /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -248,6 +263,57 @@
 			path = MockData;
 			sourceTree = "<group>";
 		};
+		79C673BC2C21C8E9003838CD /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				79C673BA2C21AE47003838CD /* UserProfileView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		79C673BD2C21C900003838CD /* CurrentUserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				79C673BE2C21C934003838CD /* CurrentUserProfileView.swift */,
+				79C673C02C21C977003838CD /* CurrentUserProfileHeaderView.swift */,
+			);
+			path = CurrentUserProfile;
+			sourceTree = "<group>";
+		};
+		79C673C22C22EFEA003838CD /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				79C673C32C22F000003838CD /* EditProfileView.swift */,
+				79C673C52C22F461003838CD /* ProfileImageGridView.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		79C673C72C231A53003838CD /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				79C673CB2C23289E003838CD /* Manager */,
+				79C673C82C231A85003838CD /* Views */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		79C673C82C231A85003838CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79C673C92C231A9A003838CD /* UserMatchViewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79C673CB2C23289E003838CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				79C673CC2C2328B1003838CD /* MatchManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +386,7 @@
 			files = (
 				79C6739D2C1A0A99003838CD /* SizeConstans.swift in Sources */,
 				79C673B22C204C42003838CD /* CardService.swift in Sources */,
+				79C673CA2C231A9A003838CD /* UserMatchViewView.swift in Sources */,
 				79C673B92C208192003838CD /* SwipeAction.swift in Sources */,
 				79C6739A2C1A0091003838CD /* SwipeActionIndicatorView.swift in Sources */,
 				79C673B52C204FE1003838CD /* MockData.swift in Sources */,
@@ -328,13 +395,18 @@
 				79C673A12C1B4DF4003838CD /* CardImageIndicatorView.swift in Sources */,
 				79C673AB2C204ABD003838CD /* CardModel.swift in Sources */,
 				79C673A42C1B5452003838CD /* CardStackView.swift in Sources */,
+				79C673C42C22F000003838CD /* EditProfileView.swift in Sources */,
 				79C673BB2C21AE48003838CD /* UserProfileView.swift in Sources */,
+				79C673CD2C2328B1003838CD /* MatchManager.swift in Sources */,
 				79C673962C18A6B2003838CD /* CardView.swift in Sources */,
 				79C673AE2C204B4D003838CD /* CardViewModel.swift in Sources */,
 				79C6737D2C1843D6003838CD /* DatingApp.swift in Sources */,
 				79C673982C18D337003838CD /* UserInfoView.swift in Sources */,
 				79C6739F2C1AD27A003838CD /* ImageScrollingOverlayView.swift in Sources */,
+				79C673C62C22F461003838CD /* ProfileImageGridView.swift in Sources */,
 				79C673A82C2039E9003838CD /* User.swift in Sources */,
+				79C673C12C21C977003838CD /* CurrentUserProfileHeaderView.swift in Sources */,
+				79C673BF2C21C934003838CD /* CurrentUserProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

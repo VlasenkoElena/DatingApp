@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct DatingApp: App {
+    @StateObject var matchManager = MatchManager()
     var body: some Scene {
         WindowGroup {
             TabBarView()
+                .environmentObject(matchManager)
         }
     }
 }
